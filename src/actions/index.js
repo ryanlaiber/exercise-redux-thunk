@@ -10,6 +10,6 @@ export function fetchAPI() {
     dispatch(requestAPI());
     return fetch('https://aws.random.cat/meow')
       .then((r) => r.json())
-      .then((r) => dispatch(r));
+        .then((r) => dispatch(getPicture(r)));
   };
 };
